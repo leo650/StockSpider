@@ -1,0 +1,34 @@
+
+        header: 
+        dataIndex: 
+     
+      
+     
+        header: '迁出状态',
+        dataIndex: 'htrId',
+        sortable: true,
+        width: 60,
+        align: 'center',
+		resizable: true,
+		renderer: function(value, cellmeta, record,   rowIndex, columnIndex, store) {
+			switch(value) {
+				case '':
+				return '正常';
+				break;
+				case null:
+				return '正常';
+				break;
+				case '0':
+				return '正常';
+				break;
+				case '1':
+				return '已迁入';
+				break;
+				case '2':
+				return '已迁出';
+				break;
+			}
+		}
+    }, {
+        header: ,
+        dataIndex: 
